@@ -92,9 +92,9 @@ namespace Spitalii.Controllers
         {
             string query = @"
                            update dbo.Spitali
-                           set SpitalName= @SpitalName,
-                           City=@City
-                           where SpitaliId=@SpitaliId
+                           set SpitalName = @SpitalName,
+                           City = @City
+                           where SpitaliId = @SpitaliId
                             ";
 
             DataTable table = new DataTable();
