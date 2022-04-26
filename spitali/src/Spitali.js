@@ -74,6 +74,53 @@ export class Spitali extends Component{
         })
     }
 
+    updateClick(){
+        fetch(variables.API_URL+'Spitali',{
+            method:'PUT',
+            headers:{
+                'Accept':'application/json',
+                'Content-Type':'application/json'
+            },
+            body:JSON.stringify({
+                SpitaliId:this.state.SpitaliId,
+                SpitalName:this.state.SpitalName,
+                City:this.state.City
+            })
+        })
+        .then(res=>res.json())
+        .then((result)=>{
+            alert(result);
+            this.refreshList();
+        },(error)=>{
+            alert('Failed');
+        })
+    } 
+
+    deleteClick(id){
+        if(window.confirm('Are you sure?')){
+        fetch(variables.API_URL+'Spitali/'+id,{
+            method:'DELETE',
+            headers:{
+                'Accept':'application/json',
+                'Content-Type':'application/json'
+            },
+            body:JSON.stringify({
+                SpitaliId:this.state.SpitaliId,
+                SpitalName:this.state.SpitalName,
+                City:this.state.City
+            })
+        })
+        .then(res=>res.json())
+        .then((result)=>{
+            alert(result);
+            this.refreshList();
+        },(error)=>{
+            alert('Failed');
+        })
+    }
+    } 
+      
+
     render(){
         const{
             Spitali,
@@ -179,6 +226,7 @@ export class Spitali extends Component{
         {SpitaliId!=0?
         <button type="button"
         className="btn btn-primary float-start"
+        onClick={()=>this.updateClick()}
         >Update</button>
         :null}
 
