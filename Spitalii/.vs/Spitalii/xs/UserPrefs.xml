@@ -9,12 +9,16 @@
       <File FileName="Properties/launchSettings.json" Line="11" Column="21" />
       <File FileName="Models/Spitali.cs" Line="13" Column="1" />
       <File FileName="appsettings.json" Line="16" Column="1" />
-      <File FileName="Controllers/SpitaliController.cs" Line="29" Column="27" />
+      <File FileName="Controllers/SpitaliController.cs" Line="21" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Spitalii" selected="True" />
+          <Node name="Spitalii" expanded="True">
+            <Node name="Spitalii" expanded="True">
+              <Node name="Controllers" expanded="True" />
+            </Node>
+          </Node>
         </State>
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
