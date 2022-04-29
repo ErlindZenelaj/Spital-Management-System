@@ -168,7 +168,7 @@ export class Doktori extends Component{
                 data-bs-toggle="modal"
                 data-bs-target="#exampleModal"
                 onClick={()=>this.addClick()}>
-                    Add Spital
+                    Add Doktor
                 </button>
     
     
