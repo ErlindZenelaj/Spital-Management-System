@@ -168,7 +168,7 @@ export class Doktori extends Component{
                 data-bs-toggle="modal"
                 data-bs-target="#exampleModal"
                 onClick={()=>this.addClick()}>
-                    Add Doktor
+                    Add Doktor 
                 </button>
     
     
@@ -179,19 +179,19 @@ export class Doktori extends Component{
                                 DoktoriId
                             </th>
                             <th>
-                                Emri
+                                Name
                             </th>
                             <th>
-                                Mbiemri
+                                Surname
                             </th>
                             <th>
-                                Gjinia
+                                Gender
                             </th>
                             <th>
-                                Titulli
+                                Title
                             </th>
                             <th>
-                                Mosha
+                                Age
                             </th>
                             <th>
                                 Options
