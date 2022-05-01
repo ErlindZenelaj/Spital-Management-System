@@ -1,4 +1,5 @@
 ﻿<Properties StartupConfiguration="{EE697744-2C00-4C3C-9192-7F52E791482A}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.Spitalii PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -8,13 +9,13 @@
       <File FileName="Startup.cs" Line="16" Column="6" />
       <File FileName="Properties/launchSettings.json" Line="11" Column="21" />
       <File FileName="Models/Spitali.cs" Line="13" Column="1" />
-      <File FileName="appsettings.json" Line="16" Column="1" />
-      <File FileName="Controllers/SpitaliController.cs" Line="21" Column="6" />
+      <File FileName="appsettings.json" Line="3" Column="5" />
+      <File FileName="Controllers/SpitaliController.cs" Line="19" Column="20" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Spitalii" expanded="True">
+          <Node name="Spitalii" expanded="True" selected="True">
             <Node name="Spitalii" expanded="True">
               <Node name="Controllers" expanded="True" />
             </Node>
@@ -29,5 +30,4 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
