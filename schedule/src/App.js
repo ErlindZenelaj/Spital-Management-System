@@ -18,7 +18,7 @@ function App() {
       </nav>
 
       <Routes>
-      <Route exact path="/schedule" element={<Schedule/>} />
+      <Route exact path="/Schedule" element={<Schedule/>} />
       </Routes>
     </div>
     </BrowserRouter>

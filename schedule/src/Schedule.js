@@ -2,11 +2,12 @@ import React, { Component } from "react";
 import { variables } from "./Variables.js";
 
 export class Schedule extends Component {
+
   constructor(props) {
     super(props);
 
     this.state = {
-      schedules: [],
+      Schedule: [],
       modalTitle: "",
       ScheduleId: 0,
       Paradite: "",
@@ -16,11 +17,11 @@ export class Schedule extends Component {
     };
   }
 
-  refreshList() {
-    fetch(variables.API_URL + "schedule")
+  refreshlist() {
+    fetch(variables.API_URL + "Schedule")
       .then((response) => response.json())
       .then((data) => {
-        this.setState({ schedules: data, schedulesWithoutFilter: data });
+        this.setState({ Schedule: data });
       });
   }
 
@@ -28,18 +29,18 @@ export class Schedule extends Component {
     this.refreshList();
   }
 
-  changeParadite = (e) => {
+  onChangeParadite = (e) => {
     this.setState({ Paradite: e.target.value });
-  };
-  changePasdite = (e) => {
+  }
+  onChangePasdite = (e) => {
     this.setState({ Pasdite: e.target.value });
-  };
-  changeNderrimiNates = (e) => {
+  }
+  onChangeNderrimiNates = (e) => {
     this.setState({ NderrimiNates: e.target.value });
-  };
-  changePushimiDrekes = (e) => {
+  }
+  onChangePushimiDrekes = (e) => {
     this.setState({ PushimiDrekes: e.target.value });
-  };
+  }
 
   addClick() {
     this.setState({
@@ -63,7 +64,7 @@ export class Schedule extends Component {
   }
 
   createClick() {
-    fetch(variables.API_URL + "schedule", {
+    fetch(variables.API_URL + "Schedule", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -89,7 +90,7 @@ export class Schedule extends Component {
   }
 
   updateClick() {
-    fetch(variables.API_URL + "schedule", {
+    fetch(variables.API_URL + "Schedule", {
       method: "PUT",
       headers: {
         Accept: "application/json",
@@ -117,12 +118,19 @@ export class Schedule extends Component {
 
   deleteClick(id) {
     if (window.confirm("Are you sure?")) {
-      fetch(variables.API_URL + "schedule/" + id, {
+      fetch(variables.API_URL + "Schedule/" + id, {
         method: "DELETE",
         headers: {
           Accept: "application/json",
           "Content-Type": "application/json",
         },
+        body: JSON.stringify({
+          ScheduleId: this.state.ScheduleId,
+          Paradite: this.state.Paradite,
+          Pasdite: this.state.Pasdite,
+          NderrimiNates: this.state.NderrimiNates,
+          PushimiDrekes: this.state.PushimiDrekes,
+        }),
       })
         .then((res) => res.json())
         .then(
@@ -139,7 +147,7 @@ export class Schedule extends Component {
 
   render() {
     const {
-      schedules,
+      Schedule,
       modalTitle,
       ScheduleId,
       Paradite,
@@ -171,10 +179,10 @@ export class Schedule extends Component {
             </tr>
           </thead>
           <tbody>
-            {schedules.map((sch) => (
+            {Schedule.map((sch) => 
               <tr key={sch.ScheduleId}>
-                <td>{sch.ScheduleId}</td>
                 <td>{sch.Paradite}</td>
+                <td>{sch.Pasdite}</td>
                 <td>{sch.NderrimiNates}</td>
                 <td>{sch.PushimiDrekes}</td>
                 <td>
@@ -219,10 +227,9 @@ export class Schedule extends Component {
                   </button>
                 </td>
               </tr>
-            ))}
+            )}
           </tbody>
         </table>
-
         <div
           className="modal fade"
           id="exampleModal"
@@ -236,76 +243,78 @@ export class Schedule extends Component {
                 <button
                   type="button"
                   className="btn-close"
-                  data-bs-dismiss="modal"
+                  data-bs-dismis="modal"
                   aria-label="Close"
                 ></button>
               </div>
 
               <div className="modal-body">
-                <div className="d-flex flex-row bd-highlight mb-3">
-                  <div className="p-2 w-50 bd-highlight">
-                    <div className="input-group mb-3">
-                      <span className="input-group-text">Paradite</span>
-                      <input
-                        type="text"
-                        className="form-control"
-                        value={Paradite}
-                        onChange={this.changeParadite}
-                      />
-                    </div>
-
-                    <div className="input-group mb-3">
-                      <span className="input-group-text">Pasdite</span>
-                      <input
-                        type="text"
-                        className="form-control"
-                        value={Pasdite}
-                        onChange={this.changePasdite}
-                      />
-                    </div>
-
-                    <div className="input-group mb-3">
-                      <span className="input-group-text">NderrimiNates</span>
-                      <input
-                        type="text"
-                        className="form-control"
-                        value={NderrimiNates}
-                        onChange={this.changeNderrimiNates}
-                      />
-                    </div>
-
-                    <div className="input-group mb-3">
-                      <span className="input-group-text">PushimiDrekes</span>
-                      <input
-                        type="text"
-                        className="form-control"
-                        value={PushimiDrekes}
-                        onChange={this.changePushimiDrekes}
-                      />
-                    </div>
-                  </div>
+                <div className="input-group mb-3">
+                  <span className="input-group-text">Paradite</span>
+                  <input
+                    type="text"
+                    className="form-control"
+                    value={Paradite}
+                    onChange={this.onChangeParadite}
+                  />
                 </div>
-
-                {ScheduleId == 0 ? (
-                  <button
-                    type="button"
-                    className="btn btn-primary float-start"
-                    onClick={() => this.createClick()}
-                  >
-                    Create
-                  </button>
-                ) : null}
-
-                {ScheduleId != 0 ? (
-                  <button
-                    type="button"
-                    className="btn btn-primary float-start"
-                    onClick={() => this.updateClick()}
-                  >
-                    Update
-                  </button>
-                ) : null}
               </div>
+
+              <div className="modal-body">
+                <div className="input-group mb-3">
+                  <span className="input-group-text">Pasdite</span>
+                  <input
+                    type="text"
+                    className="form-control"
+                    value={Pasdite}
+                    onChange={this.onChangePasdite}
+                  />
+                </div>
+              </div>
+
+              <div className="modal-body">
+                <div className="input-group mb-3">
+                  <span className="input-group-text">NderrimiNates</span>
+                  <input
+                    type="text"
+                    className="form-control"
+                    value={NderrimiNates}
+                    onChange={this.onChangeNderrimiNates}
+                  />
+                </div>
+              </div>
+
+              <div className="modal-body">
+                <div className="input-group mb-3">
+                  <span className="input-group-text">PushimiDrekes</span>
+                  <input
+                    type="text"
+                    className="form-control"
+                    value={PushimiDrekes}
+                    onChange={this.onChangePushimiDrekes}
+                  />
+                </div>
+              </div>
+
+              {ScheduleId == 0 ? (
+                <button
+                  type="button"
+                  className="btn btn-primary float-start"
+                  onClick={() => this.createClick()}
+                >
+                  Create
+                </button>
+              ) : null}
+
+              {ScheduleId != 0 ? (
+                <button
+                  type="button"
+                  className="btn btn-primary float-start"
+                  onClick={() => this.updateClick()}
+                >
+                  Update
+                </button>
+              ) : null}
             </div>
           </div>
         </div>
