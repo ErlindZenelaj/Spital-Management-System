@@ -1,5 +1,6 @@
 import './App.css';
 import {Schedule} from './Schedule';
+import React from 'react';
 import {BrowserRouter, Route, Routes,NavLink} from 'react-router-dom';
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
       </nav>
 
       <Routes>
-      <Route exact path="/Schedule" element={<Schedule/>} />
+      <Route exact path="/schedule" element={<Schedule/>} />
       </Routes>
     </div>
     </BrowserRouter>

@@ -29,16 +29,16 @@ export class Schedule extends Component {
     this.refreshList();
   }
 
-  onChangeParadite = (e) => {
+  changeParadite = (e) => {
     this.setState({ Paradite: e.target.value });
   }
-  onChangePasdite = (e) => {
+  changePasdite = (e) => {
     this.setState({ Pasdite: e.target.value });
   }
-  onChangeNderrimiNates = (e) => {
+  changeNderrimiNates = (e) => {
     this.setState({ NderrimiNates: e.target.value });
   }
-  onChangePushimiDrekes = (e) => {
+  changePushimiDrekes = (e) => {
     this.setState({ PushimiDrekes: e.target.value });
   }
 
@@ -255,7 +255,7 @@ export class Schedule extends Component {
                     type="text"
                     className="form-control"
                     value={Paradite}
-                    onChange={this.onChangeParadite}
+                    onChange={this.changeParadite}
                   />
                 </div>
               </div>
@@ -267,7 +267,7 @@ export class Schedule extends Component {
                     type="text"
                     className="form-control"
                     value={Pasdite}
-                    onChange={this.onChangePasdite}
+                    onChange={this.changePasdite}
                   />
                 </div>
               </div>
@@ -279,7 +279,7 @@ export class Schedule extends Component {
                     type="text"
                     className="form-control"
                     value={NderrimiNates}
-                    onChange={this.onChangeNderrimiNates}
+                    onChange={this.changeNderrimiNates}
                   />
                 </div>
               </div>
@@ -291,7 +291,7 @@ export class Schedule extends Component {
                     type="text"
                     className="form-control"
                     value={PushimiDrekes}
-                    onChange={this.onChangePushimiDrekes}
+                    onChange={this.changePushimiDrekes}
                   />
                 </div>
               </div>
