@@ -146,7 +146,7 @@ export class Category extends Component {
       <div>
         <button
           type="button"
-          className="btn btn-primary m-2 float-end"
+          className="btn btn-danger m-2 float-end"
           data-bs-toggle="modal"
           data-bs-target="#exampleModal"
           onClick={() => this.addClick()}
@@ -273,7 +273,7 @@ export class Category extends Component {
               {CategoryId == 0 ? (
                 <button
                   type="button"
-                  className="btn btn-primary float-start"
+                  className="btn btn-success m-3 float-left"
                   onClick={() => this.createClick()}
                 >
                   Create
@@ -283,7 +283,7 @@ export class Category extends Component {
               {CategoryId != 0 ? (
                 <button
                   type="button"
-                  className="btn btn-primary float-start"
+                  className="btn btn-success m-3 float-left"
                   onClick={() => this.updateClick()}
                 >
                   Update
