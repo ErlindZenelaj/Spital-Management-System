@@ -19,7 +19,7 @@ function App() {
       </nav>
 
       <Routes>
-      <Route exact path="/schedule" component={<Schedule/>} />
+      <Route exact path="/schedule" element={<Schedule/>} />
       </Routes>
     </div>
     </BrowserRouter>

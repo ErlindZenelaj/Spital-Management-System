@@ -2,22 +2,20 @@ import React, { Component } from "react";
 import { variables } from "./Variables.js";
 
 export class Schedule extends Component {
-
   constructor(props) {
     super(props);
 
     this.state = {
       Schedule: [],
       modalTitle: "",
-      ScheduleId: 0,
-      Paradite: "",
-      Pasdite: "",
-      NderrimiNates: "",
-      PushimiDrekes: "",
+      CategoryId: 0,
+      CategoryName: "",
+      DoctorName: "",
+      DoctorSurname: "",
     };
   }
 
-  refreshlist() {
+  refreshList() {
     fetch(variables.API_URL + "schedule")
       .then((response) => response.json())
       .then((data) => {
@@ -31,16 +29,19 @@ export class Schedule extends Component {
 
   onChangeParadite = (e) => {
     this.setState({ Paradite: e.target.value });
-  }
+  };
+
   onChangePasdite = (e) => {
     this.setState({ Pasdite: e.target.value });
-  }
+  };
+
   onChangeNderrimiNates = (e) => {
     this.setState({ NderrimiNates: e.target.value });
-  }
+  };
+
   onChangePushimiDrekes = (e) => {
     this.setState({ PushimiDrekes: e.target.value });
-  }
+  };
 
   addClick() {
     this.setState({
@@ -49,9 +50,10 @@ export class Schedule extends Component {
       Paradite: "",
       Pasdite: "",
       NderrimiNates: "",
-      PushimiDrekes: "",
+      PushimiDrekes: ""
     });
   }
+
   editClick(sch) {
     this.setState({
       modalTitle: "Edit Schedule",
@@ -59,7 +61,7 @@ export class Schedule extends Component {
       Paradite: sch.Paradite,
       Pasdite: sch.Pasdite,
       NderrimiNates: sch.NderrimiNates,
-      PushimiDrekes: sch.PushimiDrekes,
+      PushimiDrekes: sch.PushimiDrekes
     });
   }
 
@@ -74,7 +76,7 @@ export class Schedule extends Component {
         Paradite: this.state.Paradite,
         Pasdite: this.state.Pasdite,
         NderrimiNates: this.state.NderrimiNates,
-        PushimiDrekes: this.state.PushimiDrekes,
+        PushimiDrekes: this.state.PushimiDrekes
       }),
     })
       .then((res) => res.json())
@@ -101,7 +103,7 @@ export class Schedule extends Component {
         Paradite: this.state.Paradite,
         Pasdite: this.state.Pasdite,
         NderrimiNates: this.state.NderrimiNates,
-        PushimiDrekes: this.state.PushimiDrekes,
+        PushimiDrekes: this.state.PushimiDrekes
       }),
     })
       .then((res) => res.json())
@@ -124,13 +126,6 @@ export class Schedule extends Component {
           Accept: "application/json",
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({
-          ScheduleId: this.state.ScheduleId,
-          Paradite: this.state.Paradite,
-          Pasdite: this.state.Pasdite,
-          NderrimiNates: this.state.NderrimiNates,
-          PushimiDrekes: this.state.PushimiDrekes,
-        }),
       })
         .then((res) => res.json())
         .then(
@@ -153,20 +148,21 @@ export class Schedule extends Component {
       Paradite,
       Pasdite,
       NderrimiNates,
-      PushimiDrekes,
+      PushimiDrekes
     } = this.state;
 
     return (
       <div>
         <button
           type="button"
-          className="btn btn-primary m-2 float-end"
+          className="btn btn-danger m-2 float-end"
           data-bs-toggle="modal"
           data-bs-target="#exampleModal"
           onClick={() => this.addClick()}
         >
           Add Schedule
         </button>
+
         <table className="table table-striped">
           <thead>
             <tr>
@@ -179,7 +175,7 @@ export class Schedule extends Component {
             </tr>
           </thead>
           <tbody>
-            {Schedule.map((sch) => 
+            {Schedule.map((sch) => (
               <tr key={sch.ScheduleId}>
                 <td>{sch.ScheduleId}</td>
                 <td>{sch.Paradite}</td>
@@ -228,7 +224,7 @@ export class Schedule extends Component {
                   </button>
                 </td>
               </tr>
-            )}
+            ))}
           </tbody>
         </table>
         <div
@@ -300,7 +296,7 @@ export class Schedule extends Component {
               {ScheduleId == 0 ? (
                 <button
                   type="button"
-                  className="btn btn-primary float-start"
+                  className="btn btn-success m-3 float-left"
                   onClick={() => this.createClick()}
                 >
                   Create
@@ -310,7 +306,7 @@ export class Schedule extends Component {
               {ScheduleId != 0 ? (
                 <button
                   type="button"
-                  className="btn btn-primary float-start"
+                  className="btn btn-success m-3 float-left"
                   onClick={() => this.updateClick()}
                 >
                   Update
