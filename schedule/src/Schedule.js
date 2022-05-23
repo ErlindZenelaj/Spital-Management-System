@@ -18,7 +18,7 @@ export class Schedule extends Component {
   }
 
   refreshlist() {
-    fetch(variables.API_URL + "Schedule")
+    fetch(variables.API_URL + "schedule")
       .then((response) => response.json())
       .then((data) => {
         this.setState({ Schedule: data });
@@ -29,16 +29,16 @@ export class Schedule extends Component {
     this.refreshList();
   }
 
-  changeParadite = (e) => {
+  onChangeParadite = (e) => {
     this.setState({ Paradite: e.target.value });
   }
-  changePasdite = (e) => {
+  onChangePasdite = (e) => {
     this.setState({ Pasdite: e.target.value });
   }
-  changeNderrimiNates = (e) => {
+  onChangeNderrimiNates = (e) => {
     this.setState({ NderrimiNates: e.target.value });
   }
-  changePushimiDrekes = (e) => {
+  onChangePushimiDrekes = (e) => {
     this.setState({ PushimiDrekes: e.target.value });
   }
 
@@ -64,7 +64,7 @@ export class Schedule extends Component {
   }
 
   createClick() {
-    fetch(variables.API_URL + "Schedule", {
+    fetch(variables.API_URL + "schedule", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -90,7 +90,7 @@ export class Schedule extends Component {
   }
 
   updateClick() {
-    fetch(variables.API_URL + "Schedule", {
+    fetch(variables.API_URL + "schedule", {
       method: "PUT",
       headers: {
         Accept: "application/json",
@@ -118,7 +118,7 @@ export class Schedule extends Component {
 
   deleteClick(id) {
     if (window.confirm("Are you sure?")) {
-      fetch(variables.API_URL + "Schedule/" + id, {
+      fetch(variables.API_URL + "schedule/" + id, {
         method: "DELETE",
         headers: {
           Accept: "application/json",
@@ -181,6 +181,7 @@ export class Schedule extends Component {
           <tbody>
             {Schedule.map((sch) => 
               <tr key={sch.ScheduleId}>
+                <td>{sch.ScheduleId}</td>
                 <td>{sch.Paradite}</td>
                 <td>{sch.Pasdite}</td>
                 <td>{sch.NderrimiNates}</td>
@@ -255,7 +256,7 @@ export class Schedule extends Component {
                     type="text"
                     className="form-control"
                     value={Paradite}
-                    onChange={this.changeParadite}
+                    onChange={this.onChangeParadite}
                   />
                 </div>
               </div>
@@ -267,7 +268,7 @@ export class Schedule extends Component {
                     type="text"
                     className="form-control"
                     value={Pasdite}
-                    onChange={this.changePasdite}
+                    onChange={this.onChangePasdite}
                   />
                 </div>
               </div>
@@ -279,7 +280,7 @@ export class Schedule extends Component {
                     type="text"
                     className="form-control"
                     value={NderrimiNates}
-                    onChange={this.changeNderrimiNates}
+                    onChange={this.onChangeNderrimiNates}
                   />
                 </div>
               </div>
@@ -291,7 +292,7 @@ export class Schedule extends Component {
                     type="text"
                     className="form-control"
                     value={PushimiDrekes}
-                    onChange={this.changePushimiDrekes}
+                    onChange={this.onChangePushimiDrekes}
                   />
                 </div>
               </div>
