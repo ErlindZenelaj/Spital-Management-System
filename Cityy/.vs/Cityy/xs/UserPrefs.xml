@@ -1,16 +1,16 @@
 ﻿<Properties StartupConfiguration="{B0E5B2E6-9CC7-483A-B626-8BC13B1CE35D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/CityController.cs">
-    <Files>
-      <File FileName="Controllers/CityController.cs" Line="46" Column="14" />
-      <File FileName="Models/City.cs" Line="16" Column="2" />
-      <File FileName="Properties/launchSettings.json" Line="1" Column="2" />
-      <File FileName="appsettings.json" Line="3" Column="10" />
-    </Files>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Cityy" expanded="True">
+          <Node name="Cityy" expanded="True" selected="True">
             <Node name="Cityy" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
               <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
@@ -23,11 +23,8 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Cityy PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Cityy PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
 </Properties>
