@@ -14,7 +14,7 @@
         "outputPath": "/Users/erlindzenelaj/Documents/GitHub/Spital-Management-System/Spitalii/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/erlindzenelaj/.nuget/NuGet/NuGet.Config"
+          "/Users/erlindzenelaj/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"

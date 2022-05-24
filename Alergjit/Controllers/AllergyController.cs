@@ -89,7 +89,6 @@ namespace Alergjit.Controllers
         }
 
         // PUT api/values/5
-        [HttpPut]
         public JsonResult Put(Allergy alle)
         {
             string query = @"
