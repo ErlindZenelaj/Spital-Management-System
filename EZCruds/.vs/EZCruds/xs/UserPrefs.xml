@@ -1,15 +1,22 @@
 ﻿<Properties StartupConfiguration="{CED8352C-2012-448D-A9EE-4C37218786EC}|Default">
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/ScheduleController.cs">
+    <Files>
+      <File FileName="Controllers/DepartmentController.cs" Line="13" Column="2" />
+      <File FileName="Models/Schedule.cs" Line="5" Column="6" />
+      <File FileName="Controllers/ScheduleController.cs" Line="135" Column="42" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="EZCruds" expanded="True" selected="True">
             <Node name="EZCruds" expanded="True">
               <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -20,6 +27,6 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.EZCruds PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

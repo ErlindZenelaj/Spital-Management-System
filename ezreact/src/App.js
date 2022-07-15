@@ -6,6 +6,15 @@ import {Allergy} from './Allergy';
 import {City} from './City';
 import {Age} from './Age';
 import {BrowserRouter, Route, Routes,NavLink} from 'react-router-dom';
+import { Category } from './Category';
+import { Insurance } from './Insurance';
+import {Test} from './Test';
+import { Department } from './Department';
+import { Schedule } from './Schedule';
+import {Doktori} from './Doktori';
+import {Infermier} from './Infermier';
+import {Bloodgroup} from './Bloodgroup';
+import {AppointmentTypes} from './AppointmentTypes';
 
 function App() {
   return (
@@ -30,6 +39,33 @@ function App() {
             <NavLink className="btn btn-light btn-outline-primary" to="/Age">
               Age
             </NavLink>
+            <NavLink className="btn btn-light btn-outline-primary" to="/Category">
+              Category
+            </NavLink>
+            <NavLink className="btn btn-light btn-outline-primary" to="/Insurance">
+              Insurance
+            </NavLink>
+            <NavLink className="btn btn-light btn-outline-primary" to="/Test">
+              LaboratoryTests
+            </NavLink>
+            <NavLink className="btn btn-light btn-outline-primary" to="/Department">
+              Department
+            </NavLink>
+            <NavLink className="btn btn-light btn-outline-primary" to="/Schedule">
+              Schedule
+            </NavLink>
+            <NavLink className="btn btn-light btn-outline-primary" to="/Doktori">
+              Doktori
+            </NavLink>
+            <NavLink className="btn btn-light btn-outline-primary" to="/Infermier">
+              Infermier
+            </NavLink>
+            <NavLink className="btn btn-light btn-outline-primary" to="/Bloodgroup">
+              Bloodgroup
+            </NavLink>
+            <NavLink className="btn btn-light btn-outline-primary" to="/AppointmentTypes">
+            AppointTypes
+            </NavLink>
           </li>
         </ul>
       </nav>
@@ -41,6 +77,15 @@ function App() {
         <Route exact path='/Allergy' element={<Allergy/>}/>
         <Route exact path='/City' element={<City/>}/>
         <Route exact path='/Age' element={<Age/>}/>
+        <Route exact path='/Category' element={<Category/>}/>
+        <Route exact path='/Insurance' element={<Insurance/>}/>
+        <Route exact path='/test' element={<Test/>}/>
+        <Route exact path='/Department' element={<Department/>}/>
+        <Route exact path='/Schedule' element={<Schedule/>}/>
+        <Route exact path='/Doktori' element={<Doktori/>}/>
+        <Route exact path='/Infermier' element={<Infermier/>}/>
+        <Route exact path='/Bloodgroup' element={<Bloodgroup/>}/>
+        <Route exact path='/AppointmentTypes' element={<AppointmentTypes/>}/>
       </Routes>
     </div>
     </BrowserRouter>
