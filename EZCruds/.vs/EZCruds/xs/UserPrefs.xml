@@ -1,22 +1,17 @@
 ﻿<Properties StartupConfiguration="{CED8352C-2012-448D-A9EE-4C37218786EC}|Default">
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/ScheduleController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/SpitaliController.cs">
     <Files>
-      <File FileName="Controllers/DepartmentController.cs" Line="13" Column="2" />
-      <File FileName="Models/Schedule.cs" Line="5" Column="6" />
-      <File FileName="Controllers/ScheduleController.cs" Line="135" Column="42" />
+      <File FileName="Models/Spitali.cs" Line="13" Column="19" />
+      <File FileName="Controllers/SpitaliController.cs" Line="23" Column="51" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="EZCruds" expanded="True" selected="True">
+          <Node name="EZCruds" expanded="True">
             <Node name="EZCruds" expanded="True">
               <Node name="Dependencies" expanded="True" />
-              <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Views" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -27,6 +22,10 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.EZCruds PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
+  <MonoDevelop.Ide.ItemProperties.EZCruds PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
 </Properties>

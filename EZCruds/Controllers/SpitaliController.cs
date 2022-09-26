@@ -32,7 +32,7 @@ namespace Spitalii.Controllers
         {
             string query = @"
                             select SpitaliId, SpitalName,
-                            convert(varchar(10),City,120) as City
+                            convert(varchar(10),City,120) as City , Nrtelefonit
                             from
                             dbo.Spitali
                             ";
@@ -62,8 +62,8 @@ namespace Spitalii.Controllers
         {
             string query = @"
                            insert into dbo.Spitali
-                           (SpitalName,City)
-                    values (@SpitalName,@City)
+                           (SpitalName,City,Nrtelefonit)
+                    values (@SpitalName,@City,@Nrtelefonit)
                             ";
 
             DataTable table = new DataTable();
@@ -76,6 +76,7 @@ namespace Spitalii.Controllers
                 {
                     myCommand.Parameters.AddWithValue("@SpitalName", spi.SpitalName);
                     myCommand.Parameters.AddWithValue("@City", spi.City);
+                    myCommand.Parameters.AddWithValue("@Nrtelefonit", spi.Nrtelefonit);
                     myReader = myCommand.ExecuteReader();
                     table.Load(myReader);
                     myReader.Close();
@@ -93,7 +94,8 @@ namespace Spitalii.Controllers
             string query = @"
                            update dbo.Spitali
                            set SpitalName = @SpitalName,
-                           City = @City
+                           City = @City,
+                           Nrtelefonit = @Nrtelefonit
                            where SpitaliId = @SpitaliId
                             ";
 
@@ -108,6 +110,7 @@ namespace Spitalii.Controllers
                     myCommand.Parameters.AddWithValue("@SpitaliId", spi.SpitaliId);
                     myCommand.Parameters.AddWithValue("@SpitalName", spi.SpitalName);
                     myCommand.Parameters.AddWithValue("@City", spi.City);
+                    myCommand.Parameters.AddWithValue("@Nrtelefonit", spi.Nrtelefonit);
                     myReader = myCommand.ExecuteReader();
                     table.Load(myReader);
                     myReader.Close();

@@ -11,6 +11,7 @@ export class Spitali extends Component{
             modalTitle:"",
             SpitalName:"",
             City:"",
+            Nrtelefonit: "",
             SpitaliId:0
         }
     }
@@ -34,13 +35,17 @@ export class Spitali extends Component{
     onChangeCity =(e)=>{
         this.setState({City:e.target.value});
     }
+    onNrtelefonit =(e)=>{
+        this.setState({Nrtelefonit:e.target.value});
+    }
 
     addClick(){
         this.setState({
             modalTitle:"Add Spitali",
             SpitaliId:0,
             SpitalName:"",
-            City:""
+            City:"",
+            Nrtelefonit:""
         });
     } 
 
@@ -49,7 +54,8 @@ export class Spitali extends Component{
             modalTitle:"Edit Spitali",
             SpitaliId:spi.SpitaliId,
             SpitalName:spi.SpitalName,
-            City:spi.City
+            City:spi.City,
+            Nrtelefonit:spi.Nrtelefonit
         });
     }
 
@@ -62,7 +68,8 @@ export class Spitali extends Component{
             },
             body:JSON.stringify({
                 SpitalName:this.state.SpitalName,
-                City:this.state.City
+                City:this.state.City,
+                Nrtelefonit:this.state.Nrtelefonit
             })
         })
         .then(res=>res.json())
@@ -84,7 +91,8 @@ export class Spitali extends Component{
             body:JSON.stringify({
                 SpitaliId:this.state.SpitaliId,
                 SpitalName:this.state.SpitalName,
-                City:this.state.City
+                City:this.state.City,
+                Nrtelefonit:this.state.Nrtelefonit
             })
         })
         .then(res=>res.json())
@@ -107,7 +115,8 @@ export class Spitali extends Component{
             body:JSON.stringify({
                 SpitaliId:this.state.SpitaliId,
                 SpitalName:this.state.SpitalName,
-                City:this.state.City
+                City:this.state.City,
+                Nrtelefonit:this.state.Nrtelefonit
             })
         })
         .then(res=>res.json())
@@ -127,7 +136,8 @@ export class Spitali extends Component{
             modalTitle,
             SpitaliId,
             SpitalName,
-            City
+            City,
+            Nrtelefonit
         }=this.state;
 
         return(
@@ -154,6 +164,9 @@ export class Spitali extends Component{
                             City
                         </th>
                         <th>
+                            Nrtelefonit
+                        </th>
+                        <th>
                             Options
                         </th>
                     </tr>
@@ -164,6 +177,7 @@ export class Spitali extends Component{
                             <td>{spi.SpitaliId}</td>
                             <td>{spi.SpitalName}</td>
                             <td>{spi.City}</td>
+                            <td>{spi.Nrtelefonit}</td>
                             <td>
                         <button type="button"
                 className="btn btn-light mr-1"
@@ -213,6 +227,15 @@ export class Spitali extends Component{
             <input type="text" className="form-control"
             value={City}
             onChange={this.onChangeCity}/>
+            </div>
+        </div>
+
+        <div className="modal-body">
+            <div className="input-group mb-3">
+            <span className="input-group-text">Nrtelefonit</span>
+            <input type="text" className="form-control"
+            value={Nrtelefonit}
+            onChange={this.onNrtelefonit}/>
             </div>
         </div>
 

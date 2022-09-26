@@ -9,6 +9,8 @@ namespace EZCruds.Models
 		public string SpitalName { get; set; }
 
 		public string City { get; set; }
+
+		public string Nrtelefonit { get; set; }
 	}
 }
 

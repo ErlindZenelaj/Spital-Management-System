@@ -3,15 +3,16 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Models/UserConstants.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/LoginController.cs">
     <Files>
       <File FileName="appsettings.json" Line="10" Column="11" />
       <File FileName="Startup.cs" Line="35" Column="49" />
       <File FileName="Models/UserModel.cs" Line="6" Column="24" />
       <File FileName="Models/UserLogin.cs" Line="7" Column="2" />
-      <File FileName="Models/UserConstants.cs" Line="17" Column="1" />
-      <File FileName="Controllers/LoginController.cs" Line="18" Column="20" />
-      <File FileName="Controllers/UserController.cs" Line="10" Column="1" />
+      <File FileName="Models/UserConstants.cs" Line="15" Column="6" />
+      <File FileName="Controllers/LoginController.cs" Line="19" Column="50" />
+      <File FileName="Controllers/UserController.cs" Line="22" Column="48" />
+      <File FileName="Properties/launchSettings.json" Line="24" Column="8" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
