@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "YAQI31bFcqHkK53fjtQ5Qi9L+5GZr3YZ7vB24jCMtpV2z/Mb1yGvTC64rVsk1B077ek7R9aXpmb+EoFa0khAMQ==",
+  "dgSpecHash": "ylgWcXOGtd8GtZkxu8Q6uD8q7dYSVrSKeMfyrgGxByKZtzFLdiTG2KBE7xP6lJr5ct6eFMN0IH7GEMxpSxeddQ==",
   "success": true,
   "projectFilePath": "/Users/erlindzenelaj/Documents/GitHub/Spital-Management-System/EZCruds/EZCruds.csproj",
   "expectedPackageFiles": [
@@ -19,7 +19,7 @@
     "/Users/erlindzenelaj/.nuget/packages/system.security.accesscontrol/4.7.0/system.security.accesscontrol.4.7.0.nupkg.sha512",
     "/Users/erlindzenelaj/.nuget/packages/system.security.principal.windows/4.7.0/system.security.principal.windows.4.7.0.nupkg.sha512",
     "/Users/erlindzenelaj/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
-    "/Users/erlindzenelaj/.nuget/packages/microsoft.netcore.app.host.osx-x64/3.1.26/microsoft.netcore.app.host.osx-x64.3.1.26.nupkg.sha512",
+    "/Users/erlindzenelaj/.nuget/packages/microsoft.netcore.app.host.osx-x64/3.1.29/microsoft.netcore.app.host.osx-x64.3.1.29.nupkg.sha512",
     "/Users/erlindzenelaj/.nuget/packages/microsoft.netcore.app.ref/3.1.0/microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
   ],
   "logs": []
