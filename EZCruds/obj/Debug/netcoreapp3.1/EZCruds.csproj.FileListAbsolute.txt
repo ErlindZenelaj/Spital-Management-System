@@ -44,3 +44,8 @@
 /Users/erlindzenelaj/Documents/GitHub/Spital-Management-System/EZCruds/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/sni.dll
 /Users/erlindzenelaj/Documents/GitHub/Spital-Management-System/EZCruds/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll
 /Users/erlindzenelaj/Documents/GitHub/Spital-Management-System/EZCruds/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll
+/Users/erlindzenelaj/Documents/GitHub/Spital-Management-System/EZCruds/obj/Debug/netcoreapp3.1/staticwebassets/EZCruds.StaticWebAssets.Pack.cache
+/Users/erlindzenelaj/Documents/GitHub/Spital-Management-System/EZCruds/obj/Debug/netcoreapp3.1/staticwebassets/msbuild.EZCruds.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/erlindzenelaj/Documents/GitHub/Spital-Management-System/EZCruds/obj/Debug/netcoreapp3.1/staticwebassets/msbuild.build.EZCruds.props
+/Users/erlindzenelaj/Documents/GitHub/Spital-Management-System/EZCruds/obj/Debug/netcoreapp3.1/staticwebassets/msbuild.buildMultiTargeting.EZCruds.props
+/Users/erlindzenelaj/Documents/GitHub/Spital-Management-System/EZCruds/obj/Debug/netcoreapp3.1/staticwebassets/msbuild.buildTransitive.EZCruds.props

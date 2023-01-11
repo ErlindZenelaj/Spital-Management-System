@@ -1,15 +1,15 @@
 ﻿<Properties StartupConfiguration="{CED8352C-2012-448D-A9EE-4C37218786EC}|Default">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/AgeController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/BloodgroupController.cs">
     <Files>
-      <File FileName="Models/Spitali.cs" Line="13" Column="19" />
-      <File FileName="Controllers/SpitaliController.cs" Line="45" Column="1" />
-      <File FileName="appsettings.json" Line="3" Column="64" />
-      <File FileName="Properties/launchSettings.json" Line="12" Column="35" />
-      <File FileName="Startup.cs" Line="1" Column="1" />
-      <File FileName="Models/Age.cs" Line="1" Column="1" />
+      <File FileName="Models/Spitali.cs" />
+      <File FileName="Controllers/SpitaliController.cs" />
+      <File FileName="appsettings.json" Line="4" Column="5" />
+      <File FileName="Properties/launchSettings.json" />
+      <File FileName="Startup.cs" />
+      <File FileName="Models/Age.cs" />
       <File FileName="Controllers/AgeController.cs" Line="1" Column="1" />
+      <File FileName="Controllers/BloodgroupController.cs" Line="128" Column="50" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,21 +18,20 @@
             <Node name="EZCruds" expanded="True">
               <Node name="Dependencies" expanded="True" />
               <Node name="Controllers" expanded="True">
-                <Node name="AgeController.cs" selected="True" />
+                <Node name="BloodgroupController.cs" selected="True" />
               </Node>
+              <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.EZCruds PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.EZCruds PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>
